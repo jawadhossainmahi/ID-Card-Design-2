@@ -1,0 +1,218 @@
+:root {
+    --primary-card-text-color: #156C43;
+    --bg-color-1: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./kalpurush.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'CustomFont', sans-serif;
+}
+
+body {
+    background-color: #6294c1;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    width: 98vw;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* card front side  */
+
+.card-front,
+.card-back {
+    height: 425px;
+    width: 263px;
+    position: relative;
+}
+
+.card-front img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-front .card-details .title-section {
+    position: absolute;
+    top: 3.5%;
+    left: 0;
+    right: 0;
+}
+
+.card-front .card-details .title-section .title-lang-1 {
+    font-size: 1rem;
+    color: var(--primary-card-text-color);
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+}
+
+.card-front .card-details .title-section .title-lang-2 {
+    font-size: 1rem;
+    color: var(--primary-card-text-color);
+    text-align: center;
+    margin: 0;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+}
+
+.card-front .card-details .school-logo {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 0.2rem;
+}
+
+.card-front .card-details .student-image {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 6rem;
+    height: 6.5rem;
+    top: 38%;
+    left: 0%;
+    right: 0%;
+    background-color: var(--bg-color-1);
+    border: 0.5rem solid var(--primary-card-text-color);
+}
+
+.card-front .card-details .student-details {
+    position: absolute;
+    top: 68%;
+    color: white;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.card-front .card-details .student-details .student-data {
+    font-size: 0.8rem;
+}
+
+.card-front .card-details .student-details .student-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-front .card-details .student-details .devider-white {
+    background-color: var(--bg-color-1);
+    display: block;
+    height: 0.12rem;
+    margin: auto;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-front .card-details .student-details .student-heading-data {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 0.5rem;
+    line-height: 1rem;
+}
+
+/* card back side  */
+
+.card-back .card-details .student-details {
+    position: absolute;
+    top: 17%;
+    margin-left: 9%;
+    margin-right: 4%;
+    color: var(--bg-color-1);
+}
+
+.card-back .card-details .student-details {}
+
+.card-back .card-details .student-details .student-heading-data {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 0.5rem;
+    line-height: 1.4rem;
+}
+
+.card-back .card-details .student-details .student-heading-data div:nth-last-child() {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-back .card-details .student-details .student-heading-data div:first-child {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 37%;
+}
+
+.card-back .card-details .student-details .student-heading-data .student-data {
+    font-size: 0.81rem;
+}
+
+.card-back .card-details .warning {
+    position: absolute;
+    top: 45%;
+    color: var(--bg-color-1);
+}
+
+.card-back .card-details .warning .devider-white {
+    background-color: var(--bg-color-1);
+    width: 100%;
+    height: 0.1rem;
+    display: block;
+}
+
+.card-back .card-details .warning p {
+    color: var(--bg-color-1);
+    margin: 0.2rem 9% 0.2rem 9%;
+    font-size: 0.6rem;
+    text-align: justify;
+}
+
+.card-back .card-details .school-data {
+    position: absolute;
+    top: 56%;
+    font-size: 0.6rem;
+    color: white;
+    margin: 0.2rem 9% 0.2rem 9%;
+}
+
+.card-back .card-details .school-data p {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.card-back .card-details .qr-code {
+    position: absolute;
+    top: 72%;
+    width: 6rem;
+    left: 20%;
+
+}
