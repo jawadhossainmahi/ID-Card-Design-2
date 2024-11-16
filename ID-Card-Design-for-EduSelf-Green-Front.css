@@ -148,7 +148,6 @@ img {
     color: var(--bg-color-1);
 }
 
-.card-back .card-details .student-details {}
 
 .card-back .card-details .student-details .student-heading-data {
     display: flex;
@@ -172,7 +171,7 @@ img {
 }
 
 .card-back .card-details .student-details .student-heading-data .student-data {
-    font-size: 0.81rem;
+    font-size: 0.76rem;
 }
 
 .card-back .card-details .warning {
